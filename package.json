@@ -1,0 +1,25 @@
+{
+  "name": "pi-contain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Containment-based guardrails for pi: sandbox by default, approvals via TUI or Telegram",
+  "pi": {
+    "extensions": ["./extensions/contain/index.ts"]
+  },
+  "main": "./extensions/contain/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aliou/sh": "^0.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
